@@ -12,6 +12,7 @@ BuildRequires:	automake
 BuildRequires:	libavc1394-devel
 BuildRequires:	libdv-devel
 BuildRequires:	libstdc++-devel
+BuildRequires:	quicktime4linux-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
