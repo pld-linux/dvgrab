@@ -1,12 +1,12 @@
 Summary:	DV grabbing utility
 Summary(pl):	Narzêdzie do zgrywania DV
 Name:		dvgrab
-Version:	1.2
+Version:	1.5
 Release:	0.1
 License:	GPL
 Group:		Applications/Multimedia
-Source0:	http://kino.schirmacher.de/filemanager/download/8/%{name}-%{version}.tar.gz
-# Source0-md5:	ccd3386eba2fb8526787846ebb135914
+Source0:	http://kino.schirmacher.de/filemanager/download/20/%{name}-%{version}.tar.gz
+# Source0-md5:	1bddb6bcda3835d96b96b5c440991114
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
