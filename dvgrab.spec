@@ -1,17 +1,17 @@
 Summary:	DV grabbing utility
 Summary(pl):	Narzêdzie do zgrywania DV
 Name:		dvgrab
-Version:	1.6
+Version:	1.7
 Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
-Source0:	http://kino.schirmacher.de/filemanager/download/20/%{name}-%{version}.tar.gz
-# Source0-md5:	1bddb6bcda3835d96b96b5c440991114
-# Source0-size:	152654
+Source0:	http://kino.schirmacher.de/filemanager/download/43/%{name}-%{version}.tar.gz
+# Source0-md5:	42d14bcc6375774c2623c05530c5a5dd
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libavc1394-devel
 BuildRequires:	libdv-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,7 +23,7 @@ dvgrab to narzêdzie do zgrywania obrazu i d¼wiêku z urz±dzeñ
 kompatybilnych z IEEE1394, takich jak magnetowidy czy kamkodery.
 
 %prep
-%setup -q -n %{name}-1.5
+%setup -q
 
 %build
 %{__aclocal}
