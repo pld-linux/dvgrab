@@ -4,7 +4,7 @@ Version:	1.2
 Release:	0.1
 License:	GPL
 Group:		Applications/Multimedia
-Source0:	%{name}-%{version}.tar.gz
+Source0:	http://kino.schirmacher.de/filemanager/download/8/%{name}-%{version}.tar.gz
 Buildroot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
