@@ -5,8 +5,9 @@ Version:	1.7
 Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
-Source0:	http://kino.schirmacher.de/filemanager/download/43/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/kino/%{name}-%{version}.tar.gz
 # Source0-md5:	42d14bcc6375774c2623c05530c5a5dd
+URL:		http://www.kinodv.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libavc1394-devel
