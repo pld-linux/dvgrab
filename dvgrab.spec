@@ -1,5 +1,5 @@
 Summary:	DV grabbing utility
-Summary(pl.UTF-8):   Narzędzie do zgrywania DV
+Summary(pl.UTF-8):	Narzędzie do zgrywania DV
 Name:		dvgrab
 Version:	2.1
 Release:	1
