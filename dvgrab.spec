@@ -1,5 +1,5 @@
 Summary:	DV grabbing utility
-Summary(pl):	Narzêdzie do zgrywania DV
+Summary(pl.UTF-8):   NarzÄ™dzie do zgrywania DV
 Name:		dvgrab
 Version:	2.1
 Release:	1
@@ -20,8 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 dvgrab is an utility for grabbing video/audio from an
 IEEE1394-compliant device as VCR or camcoder.
 
-%description -l pl
-dvgrab to narzêdzie do zgrywania obrazu i d¼wiêku z urz±dzeñ
+%description -l pl.UTF-8
+dvgrab to narzÄ™dzie do zgrywania obrazu i dÅºwiÄ™ku z urzÄ…dzeÅ„
 kompatybilnych z IEEE1394, takich jak magnetowidy czy kamkodery.
 
 %prep
