@@ -1,12 +1,12 @@
 Summary:	DV grabbing utility
 Summary(pl.UTF-8):	Narzędzie do zgrywania DV
 Name:		dvgrab
-Version:	2.1
+Version:	3.0
 Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/kino/%{name}-%{version}.tar.gz
-# Source0-md5:	6793471d7b5c29788371d8102f013306
+# Source0-md5:	7ac49e0c183fb5b9c7496fb92bdc6d07
 URL:		http://www.kinodv.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
