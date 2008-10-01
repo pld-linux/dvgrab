@@ -14,7 +14,7 @@ BuildRequires:	libavc1394-devel
 BuildRequires:	libdv-devel
 BuildRequires:	libiec61883-devel
 BuildRequires:	libstdc++-devel
-BuildRequires:	quicktime4linux-devel
+Buildrequires:	libquicktime-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
