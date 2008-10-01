@@ -13,8 +13,8 @@ BuildRequires:	automake
 BuildRequires:	libavc1394-devel
 BuildRequires:	libdv-devel
 BuildRequires:	libiec61883-devel
-BuildRequires:	libstdc++-devel
 Buildrequires:	libquicktime-devel
+BuildRequires:	libstdc++-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
