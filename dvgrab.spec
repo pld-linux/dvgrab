@@ -1,12 +1,13 @@
 Summary:	DV grabbing utility
 Summary(pl.UTF-8):	Narzędzie do zgrywania DV
 Name:		dvgrab
-Version:	3.2
-Release:	3
+Version:	3.4
+Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
 Source0:	http://dl.sourceforge.net/kino/%{name}-%{version}.tar.gz
-# Source0-md5:	3c2af59a3b8b76473b557adf4793cebd
+# Source0-md5:	093b74cb9f9bf321e48ffbbe5ba8cba6
+Patch0:		%{name}-build.patch
 URL:		http://www.kinodv.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,6 +28,7 @@ kompatybilnych z IEEE1394, takich jak magnetowidy czy kamkodery.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %{__aclocal}
