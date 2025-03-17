@@ -1,21 +1,29 @@
 Summary:	DV grabbing utility
 Summary(pl.UTF-8):	Narzędzie do zgrywania DV
 Name:		dvgrab
-Version:	3.4
-Release:	2
+Version:	3.5
+Release:	1
 License:	GPL v2
 Group:		Applications/Multimedia
-Source0:	http://dl.sourceforge.net/kino/%{name}-%{version}.tar.gz
-# Source0-md5:	093b74cb9f9bf321e48ffbbe5ba8cba6
-Patch0:		%{name}-build.patch
-URL:		http://www.kinodv.org/
-BuildRequires:	autoconf
+Source0:	https://downloads.sourceforge.net/kino/%{name}-%{version}.tar.gz
+# Source0-md5:	b39a242ce63e80fc347ab59931f75649
+URL:		https://www.kinodv.org/
+BuildRequires:	autoconf >= 2.52
 BuildRequires:	automake
-BuildRequires:	libavc1394-devel
-BuildRequires:	libdv-devel
-BuildRequires:	libiec61883-devel
-BuildRequires:	libquicktime-devel
+BuildRequires:	libavc1394-devel >= 0.5.1
+BuildRequires:	libdv-devel >= 0.103
+BuildRequires:	libiec61883-devel >= 1.0.0
+BuildRequires:	libjpeg-devel
+BuildRequires:	libquicktime-devel >= 0.9.5
+BuildRequires:	libraw1394-devel >= 1.1.0
 BuildRequires:	libstdc++-devel
+BuildRequires:	linux-libc-headers >= 2.6
+BuildRequires:	pkgconfig
+Requires:	libavc1394 >= 0.5.1
+Requires:	libdv >= 0.103
+Requires:	libiec61883 >= 1.0.0
+Requires:	libquicktime >= 0.9.5
+Requires:	libraw1394 >= 1.1.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,12 +36,13 @@ kompatybilnych z IEEE1394, takich jak magnetowidy czy kamkodery.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
 %{__autoconf}
+%{__autoheader}
 %{__automake}
+CXXFLAGS="%{rpmcxxflags} -Wno-narrowing"
 %configure
 %{__make}
 
